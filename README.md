@@ -19,6 +19,7 @@
 ### 다른 환경에서 git 이어서 작업하기
 * 새폴더 연결하기
 * `git clone 저장소 주소 붙여넣기`
-* 
-* 
-* 
+* `cd 지정폴더명`
+* 작업한 파일을 다시 `git add .`
+* `git commit -m '내용정리'`
+* `git push origin main`
