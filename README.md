@@ -23,3 +23,4 @@
 * 작업한 파일을 다시 `git add .`
 * `git commit -m '내용정리'`
 * `git push origin main`
+* `git pull origin main` 메인에 올렸던 작업을 내려받기
