@@ -16,11 +16,14 @@
 3. 피그잼에 일부 화면 넘겨서 태그 계획하기
 4. 계획한 태그를 가족관계에 맞게 트리구조 만들기
 5. Vs code에서 실제 HTML 작성하기(트리구조 순서에 맞게 바깥쪽 -> 안쪽순서로!)
-### 다른 환경에서 git 이어서 작업하기
+### 다른 환경에서 git 이어서 작업하기 (집)
 * 새폴더 연결하기
 * `git clone 저장소 주소 붙여넣기`
 * `cd 지정폴더명`
-* 작업한 파일을 다시 `git add .`
-* `git commit -m '내용정리'`
-* `git push origin main`
+* 자유롭게 수정 후 저장
+* `git status` 상태확인
+* `git add .` 스테이징 업로드
+* `git commit -m '메세지'`
+* `git push origin main` 저장소 업로드
+### (위 이어서) 다른 환경에서 git 이어서 작업하기(학원)
 * `git pull origin main` 메인에 올렸던 작업을 내려받기
