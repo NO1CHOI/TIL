@@ -1,0 +1,5 @@
+body {background-color:powderblue;}
+.title h1 {background-color:rgba(0,0,0,0.7);}
+.title h2 {color:red;}
+.title .cls {color: orangered;}
+.title #name {color: hotpink;}
