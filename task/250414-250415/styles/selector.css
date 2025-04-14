@@ -1,10 +1,10 @@
-body {}
+body {background-color:skyblue;}
 #weather {}
-#weather h1 {}
+#weather h1 {background-color: white;color:darkblue;}
 #weather p {}
 #weather .area {}
 #weather .temperature {}
-#weather .sub_title {}
+#weather .sub_title {background-color: white;color:darkblue;}
 #weather .humidity {}
 #weather .dust {}
 #weather .result {}
@@ -12,7 +12,7 @@ body {}
 #news > a {}
 #news .box {}
 #news .box a {}
-#news .box a h2 {}
-#news .box a p {}
+#news .box a h2 {background-color: white;color:darkblue;}
+#news .box a p {background-color:darkcyan;color:white;}
 #news p {}
 #news p span {}
