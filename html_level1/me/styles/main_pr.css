@@ -1,0 +1,58 @@
+#mobile_wrap {
+    background-color:#FF9B89;/* #mobile_wrap */
+    width:440px; height:956px;/* #mobile_wrap */
+    text-align:center;/* 자식,자손 정렬 */
+    font-family:'Pretendard', sans-serif;/* 자식,자손 글꼴 통일 */
+}
+#mobile_wrap .photo {
+    margin-top:105px;
+    margin-bottom:26px;
+    display:inline-block;
+}
+#mobile_wrap .photo img {}
+#mobile_wrap h1 {
+    /* 글꼴 부모 상속 상태 */
+    font-size:1.875rem;
+    font-weight:400;
+    line-height:1;
+    letter-spacing:-0.02rem;
+    color:#000;
+    margin-bottom:46px;
+}
+#mobile_wrap h1 span {
+    /* 글꼴,행간,자간 상속상태 */
+    font-weight:900; 
+    font-size:2.5rem;
+    color:#fff;
+}
+#mobile_wrap h2 {
+    line-height:1.8;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02em;
+    width:168px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+#mobile_wrap .git {
+    line-height:1.8;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02em;
+    width:168px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+#mobile_wrap .skill {}
+#mobile_wrap .skill li {
+    line-height:1.8;
+    font-size:1rem;
+    font-weight:400;
+    letter-spacing:-0.02em;
+    width:168px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
