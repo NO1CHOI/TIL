@@ -1,0 +1,29 @@
+/* 445x956 */
+/* 배경색:#4093FF*/
+body {
+    font-family: 'Pretendard', sans-serif;
+}
+#mobile_wrap {
+    background-color: #4093FF ;
+    width: 445px; height: 956px;
+    text-align: center;
+}
+#mobile_wrap img {
+    margin-top:239px;
+    margin-bottom:80px;
+}
+#mobile_wrap a {
+    /* width: 132px; height:50px; */
+    /* a태그에 가로세로 크기 입력 시 적용이 안되는 이유는 a가 인라인요소이기 때문!
+    (위)해결법: a태그를 css 속성을 이용하여 크기를 인식하는 block으로 변경 */
+    display:inline-block;
+    width: 132px; height:50px;
+    line-height: 50px;
+    font-size:1.2rem;
+    font-weight:700;
+    letter-spacing: -0.02em; 
+    color:#4093FF;
+    /* padding:10px 20px 10px 20px; */
+    border-radius:50px;
+    background-color: white;
+}

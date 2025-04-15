@@ -1,0 +1,50 @@
+/* 배경색 : #4093FF */
+body {}
+#mobile_wrap {
+    background-color: #4093FF ;
+    width: 445px; height: 956px;
+    text-align: center;
+    font-family: 'Pretendard', sans-serif;
+}
+#mobile_wrap .photo {}
+#mobile_wrap .photo img {
+    margin-top:80px;
+    margin-bottom:50px;
+}
+#mobile_wrap h1 {
+    font-size: 2.25rem;
+    letter-spacing: -0.02em; 
+    margin-bottom: 50px;
+    /* line-height: ; */
+}
+#mobile_wrap h1 span {
+    color:white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+#mobile_wrap .my_email {
+    margin-left:50px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+#mobile_wrap .my_email .name {
+    color:white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#mobile_wrap .my_email .git {
+    color:white;
+    font-weight: 600;
+}
+#mobile_wrap .introduce {
+    text-align: left;
+    margin-left:50px;
+}
+#mobile_wrap .introduce h2 {    
+    font-weight: 600;
+}
+#mobile_wrap .introduce .skill {}
+#mobile_wrap .introduce .skill li {
+    margin-top:20px;
+    font-weight: 600;
+}

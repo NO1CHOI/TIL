@@ -14,5 +14,5 @@ body {background-color:skyblue;}
 #news .box a {}
 #news .box a h2 {background-color: white;color:darkblue;}
 #news .box a p {background-color:darkcyan;color:white;}
-#news p {}
+#news p {color:white}
 #news p span {}
