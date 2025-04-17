@@ -1,0 +1,64 @@
+/* index CSS */
+/* 
+width:440px;
+height:956ox;
+메인색 : #021526
+보조색 : #0B60B0
+글자색 : #40A2D8
+포인트색 : #FFCC00
+글자 보조색 : #F0EDCF
+
+background: linear-gradient(blue, pink);
+*/
+#wrap {
+    width:440px; height: 956px;
+    background: linear-gradient(#021526 60%, #0B60B0);
+    /* 수평 가운데 정렬 */
+    text-align: center;
+}
+#wrap h1 {
+    padding-top:285px;
+    margin-bottom: 70px;
+}
+#wrap h1 img {}
+#wrap .btn_wrap {
+    text-align: left;
+    width: 300px;
+    /* 블록의 너비값을 부모보다 작게 설정했을때 블록을 가운데 정렬하고싶다면?*/
+    margin-left: auto;
+    margin-right:auto;
+    /* background-color: whitesmoke; */
+}
+#wrap .btn_wrap a {
+    display:block; /* 블록의 넓이는 부모의 넓이와 같다  */
+    /* background-color: #fff; */
+    text-align: center;
+}
+#wrap .btn_wrap .login_btn {
+    background-color: #fff;
+    color: #0B60B0;
+    /* border:1px solid #021526; */
+    font-weight: 600;
+    font-size: 0.875rem;/* 14px */
+    line-height: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+#wrap .btn_wrap .sign_up_btn {
+    background-color: #fff;
+    color: #0B60B0;
+    font-weight: 600;
+    font-size: 0.875rem;/* 14px */
+    margin-top:20px;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+}
+#wrap .btn_wrap .pw_search {
+    display: inline;
+    margin-left:10px;
+    color:#F0EDCF;
+    font-size: 0.75rem;/* 12px */
+    /* background-color: yellow; */
+}
