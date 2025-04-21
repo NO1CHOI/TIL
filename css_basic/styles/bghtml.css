@@ -1,0 +1,36 @@
+/* bg css */
+.bg {
+    width:1000px;
+    height:1000px;
+    background-repeat: no-repeat;
+}
+.bg1 {
+    background-color: lightblue;
+    background-image: url(https://i.pinimg.com/736x/5e/45/ee/5e45ee24674da66bd3d79fdc88576e13.jpg);
+    background-position: 0 50%;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+.bg2 {
+    background-color: lightcoral;
+    background-image: url(https://i.pinimg.com/736x/bd/65/35/bd6535e1a19dd9f15a444e29c62e7fc1.jpg);
+    background-position:0 0;
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+}
+.bg3 {
+    background: url(../images/duck.jpg) no-repeat scroll center 80%;
+    /* height: 2000px;
+    background-image: url(../images/flying_cat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.bg4 {
+    background:lightcoral url(https://i.pinimg.com/736x/c9/da/66/c9da66c53e1f02ee17809fbbbf16900a.jpg) no-repeat fixed center;
+    /* height: 5000px;
+    background-image: url(../images/flying_cat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
