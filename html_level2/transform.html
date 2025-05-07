@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css_basic/styles/reset.css" rel="stylesheet">
+    <!-- 내부 스타일 -->
+    <style>
+        .parent {
+            background-color: #eee; padding:30px;
+        }
+        .parent .child {
+            width: 100px; height: 100px;
+            margin:20px;
+            border:1px solid #000;
+        }
+        .parent .child1 {
+            background-color: lightcoral;
+            transition:background-color 2s;
+        }
+        .parent .child1:hover {
+            background-color: lightblue;
+            /* transition : 애니메이션적용속성 지속시간; */
+        }
+        .parent .child2 {
+            transition:width 0.5s, height 2s;
+        }
+        .parent .child2:hover {
+            width: 200px; height: 200px;
+        }
+        .parent .child3 {
+            transition:border 1s;
+        }
+        .parent:hover .child3 {
+            border: 5px solid lightseagreen;
+        }
+        .parent .child4 {
+            border-radius: 50%;
+            position:relative; left:0; /* 시작위치(현재기준위치) */
+            transition:left 1s ease-out 1s;
+        }
+        .parent:hover .child4 {
+            left:300px;
+        }
+        .parent .child5 {
+            transition:scale 2s, border-radius 2s, border 0.5s;
+        }
+        .parent .child5:hover {
+            border-radius: 50%;
+            border: 10px solid lightsalmon;
+            scale:200%;
+        }
+    </style>
+</head>
+<body>
+    <h1>transition</h1>
+    <p>기존 css 속성이 사용자의 동작에 의해서 변경될 떄 애니메이션 효과를 주는 속성</p>
+    <div class="parent">
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+        <div class="child child3"></div>
+        <div class="child child4"></div>
+        <div class="child child5"></div>
+    </div>
+</body>
+</html>
