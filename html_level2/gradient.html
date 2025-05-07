@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient | css</title>
+    <link href="../css_basic/styles/reset.css" rel="stylesheet">
+    <!-- 내부스타일 -->
+    <style>
+        .btn {
+            display: block;
+            border:1px solid #000;
+            width: 400px; height: 200px;
+        }
+        #btn1 {
+            /* gradient 사용 시 -color 없이 통합 background로 명령한다. */
+            background: linear-gradient(45deg,red,orange,yellow,green,blue,#000);
+            background-size:400%;
+            transition:all 0.5s;
+        }
+        #btn1:hover {
+            background-position: 100% 0;
+        }
+        h1 {
+            background-color: chocolate;
+            /* display: inline-block; */
+            width: max-content;
+            text-transform: uppercase;
+            background: linear-gradient(90deg,purple,darkblue,#000,darkred);
+            font-size: 2.5rem;
+            font-weight: 800;
+            /* gradient 색상을 글자에 적용하는 방법 */
+            color:transparent;
+            background-clip: text;
+            /* 마우스 올렸을때 배경이 움직이게 하는법 */
+            background-size: 400%;
+            transition:all 2s
+        }
+        h1:hover {
+            background-position: 100% 0; 
+        }
+        h2 {
+            font-size:2.5rem;
+            font-weight:800;
+            text-transform: uppercase;
+            /* 그라디언트 적용 */
+            /* background: linear-gradient(90deg,red,orange,yellow,lightseagreen,lightblue,lightcoral); */
+            background: linear-gradient(45deg,rgba(34, 193, 195, 1) 0%, rgba(67, 192, 173, 1) 15%, rgba(106, 191, 146, 1) 33%, rgba(155, 190, 113, 1) 55%, rgba(199, 189, 82, 1) 75%, rgba(229, 188, 61, 1) 89%, rgba(253, 187, 45, 1) 100%);
+            width: max-content;
+            /* 그라디언트 글자에 적용 */
+            color:transparent;
+            background-clip:text;
+            /* 마우스 hover시 적용 */
+            background-position: 0;
+            transition: all 10s linear;
+        }
+        h2:hover {
+            background-position: -20000px 0;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="btn1" class="btn">HOVER ME!</button>
+    <h1>HTML & CSS & Javascript & figma & react</h1>
+    <hr>
+    <h2>HTML & CSS & Javascript & figma & react<br>HTML & CSS & Javascript & figma & react</h2>
+</body>
+</html>

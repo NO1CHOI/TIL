@@ -42,17 +42,30 @@ header nav > ul > li > .sub li a:hover {color:#ddd;}
 /*section*/
 section {}
 section .sec1 {background-image:url(../images/main_bg_01.jpg)}
-section .sec2 {background-image:url(../images/main_bg_02_3.jpg)}
+section .sec2 {
+    background:
+    url(../images/person.png),
+    url(../images/ball.png),
+    url(../images/space.jpg);
+    /* background-image:url(../images/main_bg_02_3.jpg) */
+}
 section .sec3 {background-image:url(../images/main_bg_03.jpg)}
 section > div {
     background-size:cover; background-position:center;
     text-align:center; height:100vh; width:100%; 
     display:flex; flex-flow:column wrap; justify-content:center; color:#fff;
 }
+section > div:nth-child(1) {
+    background-attachment: fixed;
+}
 section > div:nth-child(2) {
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px,auto,cover;
+    background-attachment: scroll,scroll,fixed;
+    /* background-repeat:no-repeat;
     background-size:cover, cover;
-    background-position:40% center, center;
+    background-position:40% center, center; */
 }
 section > div h1 {
     font-family: 'Pattaya', sans-serif;

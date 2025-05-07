@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform | css</title>
+    <link href="../css_basic/styles/reset.css" rel="stylesheet">
+    <!-- 내부스타일 -->
+    <style>
+        #parent {
+            background-color: #eee; padding:40px;
+        }
+        #parent .child {
+            width: 150px; height: 150px;/* transform 적용 전 크기 기본셋팅 */
+            border: 1px solid #000;
+            margin:10px;
+        }
+        #parent .child1 {
+            transition:transform 2s;
+            transform-origin: right top;
+        }
+        #parent:hover .child1 {
+            transform: scale(1.5);
+        }
+        #parent .child2 {
+            position:relative; left:0; top:0;
+            transition:all 0.5s;
+            transform-origin: right bottom;
+        } 
+        #parent:hover .child2 {
+            /* transform: rotate(360deg); */
+            /* transform: skewX(25deg); */
+            /* transform:translate(50px, -20px); */
+            left:50px; top:20px;
+        }
+        nav {}
+        nav .gnb {
+            display: flex;
+        }
+        nav .gnb > li {
+            width: 400px;
+            background-color:rgb(0, 0, 92);
+            position:relative;
+        }
+        nav .gnb > li > a {
+            display: block;
+            color:#fff;
+            text-align: center;
+            line-height: 40px;
+        }
+        nav .gnb > li:hover .lnb {
+            display: block;
+            transform: scaleY(0)  translateX(0);
+            transition:transform 1s;
+            transform-origin: center top;
+        }
+        nav .gnb > li > .lnb {
+            width: 100%;
+            background-color:rgb(248, 211, 91);
+            position: absolute;
+            left:0; top:40px;
+            text-align: center;
+            /* display: none; */
+            width: 100%;
+            transform: scaleY(1) translateX(-50px);
+        }
+        nav .gnb > li > .lnb li{}
+        nav .gnb > li > .lnb li a {
+            color:#fff;
+            display: block;
+            line-height: 40px;
+        }
+    </style>
+<head>
+<body>
+    <div id="parent">
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+    </div>
+    <hr>
+    <nav>
+        <ul class="gnb">
+            <li><a href="#">메인메뉴1</a>
+                <ul class="lnb">
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴2</a></li>
+                    <li><a href="#">서브메뉴3</a></li>
+                    <li><a href="#">서브메뉴4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">메인메뉴2</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

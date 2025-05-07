@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform3d | CSS</title>
+    <link href="../css_basic/styles/reset.css" rel="stylesheet">
+    <!-- 내부스타일 -->
+    <style>
+        .container {
+            background-color: #eee;
+            padding:30px;
+            perspective:50px ;/* 원근감 깊이 설정 */
+        }
+        .container .btn {
+            background-color: lightcoral; color:#fff;
+            width: 200px; height: 70px;
+            transition:all 1s;
+        }
+        .container .btn:hover {
+            transform: rotateX(60deg) rotateY(20deg) rotateZ(100deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn">3D button</button>
+    </div>
+</body>
+</html>

@@ -16,17 +16,38 @@
             background:#fff; border-radius:50px; text-align:center; padding:20px 0;
             display:inline-block; margin-top:50px; font-weight:600;
             width:200px; color:#000;
+            transition:all 0.5s;
         }
         #sns {position:absolute; left:0; bottom:100px;}
         #sns a {
             display:inline-block; width:40px; margin:0 10px;
             position:relative; top:0;
         }
-        #sns a img {width:100%;}
+        #sns a img {width:100%;transition:all 0.5s;}
         #dynamic #btn {display:flex; position:absolute; right:0; bottom:100px;}
         #dynamic #btn a {margin:0 5px;}
         #dynamic #btn a#prev {}
-        #dynamic #btn a#next {}
+        #dynamic #btn a#next {transform: rotate(-180deg)}
+        /* hover */
+        #wrap main .txt a:hover {
+            color:#da1e27;
+            font-weight:800;
+            filter: brightness(120%);
+            text-align: center;
+            width:240px;
+            transform-origin: left top;
+        }
+        #sns a:hover img {
+            transform:translateY(-20px);
+        }
+        #wrap main #dynamic #img #big {
+            transform:translateX(500px);
+            transition: all 3s linear;
+        }
+        #wrap main #dynamic #img #big:hover {
+            transform:translateX(0);
+            transform-origin: right bottom;
+        }
     </style>
     <script>
         window.onload=function(){
