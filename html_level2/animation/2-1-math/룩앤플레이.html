@@ -25,32 +25,41 @@
 
         main #visual #deco .obj1 {
             top:170px; left:50%; margin-left:-342px;
+            animation: rotate24 5s alternate infinite;
         }
         main #visual #deco .obj2 {
             left:0; top:150px;
+            animation: scale1 1s alternate infinite;
         }
         main #visual #deco .obj3 {
             left:100px; top:250px;
+            animation: rotate24 5s alternate infinite;
         }
         main #visual #deco .obj4 {
             left:150px; top:350px;
+            animation: scale1 1s alternate infinite;
         }
         main #visual #deco .obj5 {
             right:0; top:150px;
+            animation: rotate24 5s alternate-reverse infinite;
         }
         main #visual #deco .obj6 {
             right:200px; top:250px;
+            animation: rotate24 5s alternate infinite;
         }
         main #visual #deco .obj7 {
             right:200px; top:240px;
+            animation: scale1 1s alternate-reverse infinite;
         }
         main #visual #deco .obj8 {
             left:270px; top:440px;
+            animation: rotate24 5s alternate-reverse infinite;  
         }
         main #visual #deco .obj9 {
             right:0; top:440px;
+            animation: scale1 1s alternate-reverse infinite;
         }
-
+        
         main #book_center {
             position:absolute; 
             left:50%; bottom:-50px; margin-left:-181px;
@@ -68,8 +77,17 @@
         }
         main .category a.active {background:#26bad7; color:#fff;}
 
-        /* 애니메이션 */
-
+        /* 애니메이션 키프레임 */
+        @keyframes rotate24 {
+            0% {transform:rotate(0);}
+            50% {transform: rotate(24deg);}
+            75% {transform: rotate(0);}
+            100% {transform: rotate(-24deg);}
+        }
+        @keyframes scale1 {
+            from {trasnform:scale(0);}
+            to {transform: scale(1.5);}
+        }
     </style>
 </head>
 <body>
