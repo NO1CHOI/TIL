@@ -39,7 +39,7 @@
         .menu_contents .menu a {
             margin-right:10px; overflow:hidden; position:relative;
             border-radius:10px; 
-            transition:all 0.5s;
+            transition:all 0.5s; /* 과제 css 추가 */
         }
         .menu_contents .menu a:last-child {margin-right:0}
         .menu_contents .menu a img {width:100%;}
@@ -58,8 +58,11 @@
             line-height:1.5;
         }
         /* 과제 css */
+        main .menu_contents .menu2 {display: none;}
+        main .menu_contents .menu3 {display: none;}
         .menu_contents .menu a:hover {
             border-radius: 50%;
+            overflow: hidden;
         }
         .menu_contents .menu a:hover .info {display:block; background:rgba(0,102,51,0.8);}
         .menu_contents .menu a:hover span {color:#fff;}
