@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 | css</title>
+    <link rel="stylesheet" href="../css_basic/styles/reset.css">
+    <!-- 내부스타일 -->
+    <style>
+        main {
+            /* 1920으로 가로크기 고정 (반응형 웹 제작시 고정 크기 주의) */
+            /* width: 1920px; */
+            /* 최대제한너비 1920 (사용자가 보는 디바이스 크기를 1920이하일 경우 상대적으로 자동크기조절)*/
+            max-width: 1920px;
+            /* 최소제한너비 901 (901 ~ 1920 사이값만 상대처리를 위한 최소제한값 설정)*/
+            min-width: 901px;
+            border:5px solid #000;
+            height: 100vh;
+        }
+        main .mv_list {
+            display: flex;
+            flex-flow: row wrap;
+            /* 자식 사이 여백을 일정하게 적용시키는 flex 부노속성 */
+            gap:10px;
+        }
+        main .mv_list li {
+            /* 반응형에서 요소 크기(w) 조절 시 % 또는 clac() 계산법으로 상대처리를 반드시 해야한다. 크기가 고정되는 광고 및 특정 영역만 필요 시 최소한으로 px고정 너비를 적용한다. */
+            width: calc((100% - (10px * 2)) / 3 );
+            height: 250px; /* 임시높이값 */
+        }
+        main .mv_list li:nth-child(odd) {background-color: lightcoral;}
+        main .mv_list li:nth-child(even) {background-color: lightblue;}
+        /* 반응형 규칙 (사용자가 이용하는 디바이스가 달라졌을 때 인식하는 값) */
+        @media screen and (max-width:900px) {
+            /* 기존 css 중 현재 규칙에 맞춰 달라지는 값만 수정 */
+            main {
+                /* 첫번째 규칙 max-width:1920에 의하여 1920보다 작은 값 min 규칙으로 막지 않는 한 모두 상대처리하기 때문에 또 입력하지 않아도 된다. */
+                min-width: 601px;
+                border-color: red;
+            }
+            main .mv_list li {width: calc((100% - (10px * 1)) / 2 );}
+        }/* media 900 end */
+        /* 모바일  */
+        @media screen and (max-width:600px) {
+            main {min-width: 600px;}
+            main .mv_list li {width: calc(100%);}
+        }
+    </style>
+</head>
+<body>
+    <!-- 유튜브 영상 미리보기 반응형 구조 만들기 -->
+    <!-- Desktop : 3열 (901 ~ 1920) -->
+    <!-- Tablet : 2열 (601 ~ 900) -->
+    <!-- Mobile : 1열 (320 ~ 600) -->
+    <main>
+        <ul class="mv_list">
+            <li>미리보기1</li>
+            <li>미리보기2</li>
+            <li>미리보기3</li>
+            <li>미리보기4</li>
+            <li>미리보기5</li>
+            <li>미리보기6</li>
+            <li>미리보기7</li>
+            <li>미리보기8</li>
+        </ul>
+    </main>
+</body>
+</html>
