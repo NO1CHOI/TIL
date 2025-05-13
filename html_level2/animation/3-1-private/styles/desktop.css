@@ -29,6 +29,25 @@ main {
     top: 80px;
     text-align: center;
 }
+/* 좌 / 우 끊긴 배경 자연스럽게 처리하기 */
+main::before {
+    content: '';
+    display: block ;
+    width: 50%; height: 100%;
+    position:absolute; left:0; top:0;
+    /* border:1px solid yellow; */
+    background: linear-gradient(90deg, rgb(9,13,43), transparent);
+    z-index: 20;
+}
+main::after  {
+    content: '';
+    display: block ;
+    width: 50%; height: 100%;
+    position:absolute; right:0; top:0;
+    /* border:1px solid yellow; */
+    background: linear-gradient(-90deg, rgb(9,13,43), transparent);
+    z-index: 20;
+}
 main > * {max-width:1400px; margin:0 auto;}
 /* 중첩순서 처리 배경(10) 그라디언트(20) 나머지(30) */
 main .bg_wrap {position:absolute; z-index:10;}

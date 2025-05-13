@@ -1,0 +1,36 @@
+main .bg_wrap {}
+main .bg_wrap .bg {}
+main .bg_wrap .bg1 {
+    animation:bg180 60s linear both infinite;
+}
+main .bg_wrap .bg2 {
+    animation:bg180 50s linear both infinite;
+}
+main .bg_wrap .bg3 {
+    animation:bg180 20s linear both infinite;
+}
+main .car {}
+main .car #car {}
+main .car #left_tire {
+
+    animation: rotate360 2s linear infinite;
+}
+main .car #right_tire {
+    animation: rotate360 2s linear infinite;
+}
+main .scroll {
+    animation: updown 2s linear alternate infinite;
+}
+/* 애니메이션 키프레임 정리 */
+@keyframes rotate360 {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@keyframes bg180 {
+    from {background-position-x:0;}
+    to {background-position-x:1000px;}
+}
+@keyframes updown {
+    from {transform:translateY(5px);}
+    to {transform: translateY(-5px);}
+}
