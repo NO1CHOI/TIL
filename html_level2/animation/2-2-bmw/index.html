@@ -33,11 +33,14 @@
             position:absolute; bottom:-1px;
             opacity: 0;
             transform: scaleX(0);
+            /* 애니메이션 중신 방향을 바꾸고싶다면? */
+            transform-origin: right;
+            /* 변경되는 속성에 대한 애니메이션 속성은? */
+            transition: all 1s;
         }
         header nav a:hover::after {
             opacity: 1;
             transform: scaleX(1);
-            transform-origin: center;
             transition: all 1s;
         }
         main {position:relative; width:1400px; height:80vh; margin:0 auto;}
